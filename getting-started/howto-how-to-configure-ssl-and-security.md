@@ -330,7 +330,7 @@ If you use a CDN, purge its cache after switching to HTTPS to avoid serving cach
 
 SEO follow-up:
 
-- Regenerate and serve your sitemap over HTTPS (Marketing > SEO & Search > Site Map), then submit the HTTPS sitemap URL
+- Regenerate and serve your sitemap over HTTPS: Marketing > SEO & Search > Site Map, then submit the HTTPS sitemap URL
   in Google Search Console and Bing Webmaster Tools.
 - Verify canonical tags, hreflang, and structured data fetch correctly over HTTPS.
 
