@@ -1,4 +1,4 @@
-name: "🚀 - Deploy"
+name: "🚀 - Deploy to docs.magento-opensource.com"
 
 on:
   push:
@@ -6,21 +6,36 @@ on:
       - main
 
 jobs:
-  build:
-    name: "✏️ - Update content"
+  sync-docs:
+    name: "📄 - Sync documentation content"
     runs-on: ubuntu-latest
 
     steps:
-      - name: "🛸 - Pull latest content"
-        uses: appleboy/ssh-action@master
+      - name: "🛸 - Pull latest docs to docs-website"
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_KEY }}
-          script: | 
-            cd /var/www/share/devdocs.mage-os.org/devdocs
-            ./bin/checkout_latest_docs.sh
-            php artisan optimize
-            php artisan optimize:clear
-            php artisan sitemap:generate
-            php artisan optimize:clear
+          script: |
+            echo "📁 Syncing docs to docs-website..."
+            cd ~/docs.magento-opensource.com/current
+
+            # Pull latest documentation from this repo
+            cd resources/docs/main
+            git fetch origin main
+            git reset --hard origin/main
+
+            echo "🧹 Clearing Laravel caches..."
+            cd ~/docs.magento-opensource.com/current
+            php artisan cache:clear
+            php artisan view:clear
+            php artisan config:clear
+            php artisan route:clear
+
+            echo "⚡ Rebuilding caches..."
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+
+            echo "✅ Documentation sync complete!"
