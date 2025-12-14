@@ -11,31 +11,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: "🛸 - Pull latest docs to docs-website"
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          script: |
-            echo "📁 Syncing docs to docs-website..."
-            cd ~/docs.magento-opensource.com/current
+      - name: "🔔 - Trigger docs sync webhook"
+        run: |
+          echo "📁 Triggering docs sync..."
 
-            # Pull latest documentation from this repo
-            cd resources/docs/main
-            git fetch origin main
-            git reset --hard origin/main
+          # Generate the signature GitHub would use
+          PAYLOAD='{"ref":"refs/heads/main"}'
+          SIGNATURE="sha256=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "${{ secrets.WEBHOOK_SECRET }}" | cut -d' ' -f2)"
 
-            echo "🧹 Clearing Laravel caches..."
-            cd ~/docs.magento-opensource.com/current
-            php artisan cache:clear
-            php artisan view:clear
-            php artisan config:clear
-            php artisan route:clear
+          # Call the webhook
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: push" \
+            -H "X-Hub-Signature-256: $SIGNATURE" \
+            -d "$PAYLOAD" \
+            "https://docs.magento-opensource.com/webhook/sync-docs")
 
-            echo "⚡ Rebuilding caches..."
-            php artisan config:cache
-            php artisan route:cache
-            php artisan view:cache
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
 
-            echo "✅ Documentation sync complete!"
+          echo "Response: $BODY"
+          echo "HTTP Status: $HTTP_CODE"
+
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "✅ Documentation sync triggered successfully!"
+          else
+            echo "❌ Documentation sync failed!"
+            exit 1
+          fi
