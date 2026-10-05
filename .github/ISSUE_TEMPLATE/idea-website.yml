@@ -1,0 +1,34 @@
+name: Website improvement idea
+description: Suggest a change to make this documentation site easier to use.
+title: "[Website] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement. This issue will be **public**, so
+        please don't include any store details, customer data, or credentials.
+  - type: input
+    id: page_url
+    attributes:
+      label: Page you were on
+      description: The docs page this idea relates to, if any.
+      placeholder: https://docs.magento-opensource.com/...
+    validations:
+      required: false
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should we improve?
+      description: Tell us what's not working well — navigation, search, layout, readability, anything.
+      placeholder: e.g. "The sidebar is hard to use on mobile — it covers the content."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help?
+      description: Optional — a bit of context helps us prioritise.
+    validations:
+      required: false

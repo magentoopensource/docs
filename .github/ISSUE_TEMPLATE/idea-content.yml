@@ -1,0 +1,44 @@
+name: Docs topic / content idea
+description: Tell us about a topic or subject the documentation should cover.
+title: "[Docs topic] "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a topic. This issue will be **public**, so please
+        don't include any store details, customer data, or credentials.
+  - type: input
+    id: page_url
+    attributes:
+      label: Page you were on
+      description: The docs page this idea relates to, if any.
+      placeholder: https://docs.magento-opensource.com/...
+    validations:
+      required: false
+  - type: textarea
+    id: topic
+    attributes:
+      label: What topic is missing?
+      description: What would you like the docs to cover that they don't today?
+      placeholder: e.g. "How to configure multi-source inventory for a marketplace integration."
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who is this for?
+      options:
+        - Merchant
+        - Developer
+        - Both
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else?
+      description: Optional — links, examples, or context that would help us write it.
+    validations:
+      required: false
