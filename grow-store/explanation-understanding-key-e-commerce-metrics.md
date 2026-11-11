@@ -1,6 +1,6 @@
 ---
 title: "Understanding Key E-commerce Metrics"
-description: "Explanation of important KPIs and how to interpret business data for growth"
+description: "Which e-commerce KPIs to track in Magento Open Source, including conversion rate, AOV and refund rate, how to calculate them and how to run a weekly review."
 type: explanation
 audience: "Magento merchants"
 tags:
@@ -10,9 +10,9 @@ last_updated: "2025-09-12T10:01:36.100Z"
 
 # Understanding Key E-commerce Metrics
 
-## Introduction
+## What are key e-commerce metrics?
 
-Focus on a handful of KPIs that directly impact revenue and customer experience. This guide shows which metrics to track, how to calculate them with Magento data, and how to run a weekly review that turns insights into actions. By the end, you can select the right KPIs for your stage, read what they mean, and make confident, ROI-driven decisions.
+Key e-commerce metrics are the handful of KPIs that directly impact revenue and customer experience. This guide shows which metrics to track, how to calculate them with Magento data, and how to run a weekly review that turns insights into actions. By the end, you can select the right KPIs for your stage, read what they mean, and make confident, ROI-driven decisions.
 
 Quick start this quarter:
 - Conversion Rate (CVR) = Orders / Sessions. Data: Orders (Admin > Reports > Sales > Orders); Sessions (analytics, e.g., GA4).

@@ -1,6 +1,6 @@
 ---
 title: "Designing a Professional Store Frontend"
-description: "Complete tutorial on customizing theme, layout, and visual design"
+description: "A no-code tutorial for the Magento Open Source Admin: assign a theme, set branding and a homepage, add blocks and widgets, and publish layout changes."
 type: tutorial
 audience:
   - "Magento merchants"

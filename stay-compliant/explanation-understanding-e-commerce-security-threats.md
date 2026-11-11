@@ -1,6 +1,6 @@
 ---
 title: "Understanding E-commerce Security Threats"
-description: "Explanation of security risks and how Magento protects against common attacks"
+description: "The main e-commerce security threats, including bots, web skimming, XSS and credential stuffing, and what Magento Open Source blocks itself or needs a WAF for."
 type: explanation
 audience: "Magento merchants"
 tags:
@@ -11,9 +11,9 @@ last_updated: "2025-09-12T10:34:13.974Z"
 
 # Understanding E-commerce Security Threats
 
-## Introduction
+## What are the main e-commerce security threats?
 
-Security is a growth enabler. For a growing merchant, understanding e-commerce threats and how Magento (Adobe Commerce
+E-commerce security threats are the attacks aimed at online stores, such as bots, web skimming, XSS/CSRF and credential stuffing. Security is a growth enabler. For a growing merchant, understanding e-commerce threats and how Magento (Adobe Commerce
 and Magento Open Source) mitigates them leads to fewer outages, lower fraud, higher conversion, and sustained customer
 trust.
 
@@ -234,3 +234,10 @@ server/application logs and third‑party extensions for admin auditing.
 - Fastly WAF (Adobe Commerce on cloud)
 - Applying security patches with Composer
 - Role-based access control (RBAC) and user management
+
+## Primary sources
+
+The standards and guidance behind this guide are published by these organizations. Check the originals for current requirements.
+
+- [Small organisations guide to cyber security](https://www.ncsc.gov.uk/collection/small-organisations-guide-to-cyber-security) (National Cyber Security Centre): practical cyber security advice for small organisations
+- [Multi-factor authentication for your corporate online services](https://www.ncsc.gov.uk/collection/mfa-for-your-corporate-online-services) (National Cyber Security Centre): guidance on multi-factor authentication

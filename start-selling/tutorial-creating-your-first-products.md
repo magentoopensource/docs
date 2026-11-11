@@ -1,6 +1,6 @@
 ---
 title: "Creating Your First Products"
-description: "Complete tutorial on adding simple and configurable products to your catalog"
+description: "Create a simple product and a configurable product with variations in Magento Open Source, with pricing and stock, and publish them to your storefront."
 type: tutorial
 audience:
   - "Magento merchants"
@@ -38,7 +38,7 @@ last_updated: "2025-09-11T07:30:34.565Z"
 
 ### Your Situation
 
-You're onboarding Magento 2 and need to publish your first products today with accurate pricing and stock so customers
+You're onboarding Magento Open Source and need to publish your first products today with accurate pricing and stock so customers
 can buy immediately.
 
 ### What You'll Learn
@@ -71,7 +71,7 @@ You'll know you've succeeded when:
 
 This tutorial is designed for:
 
-- Catalog Managers and Merchandisers new to Magento 2
+- Catalog Managers and Merchandisers new to Magento Open Source
 - Store Owners setting up their first products
 - Anyone familiar with basic eCommerce concepts (SKU, price, stock)
 

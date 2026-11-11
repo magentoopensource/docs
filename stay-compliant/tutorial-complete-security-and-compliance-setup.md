@@ -1,6 +1,6 @@
 ---
 title: "Complete Security and Compliance Setup"
-description: "Comprehensive tutorial on securing your store and meeting compliance requirements"
+description: "A step-by-step security and compliance setup for Magento Open Source: HTTPS, Admin hardening, 2FA, reCAPTCHA, cookies, PCI scope and a monthly routine."
 type: tutorial
 audience:
   - "Magento merchants"
@@ -306,3 +306,10 @@ Even experienced merchants encounter challenges. Here's how to handle common sit
 
 - Small configuration changes can materially reduce fraud and compliance burden
 - Revisit your settings quarterly or after major updates to stay aligned with policy and risk
+
+## Primary sources
+
+The standards and guidance behind this guide are published by these organizations. Check the originals for current requirements.
+
+- [PCI Security Standards Council document library](https://www.pcisecuritystandards.org/document_library/) (PCI Security Standards Council): PCI DSS and related standards and documents
+- [Security, including cyber security](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/security/) (ICO): the UK regulator's guidance on data security

@@ -1,6 +1,6 @@
 ---
 title: "Streamlining Store Operations"
-description: "Complete guide to optimizing workflows, automation, and operational efficiency"
+description: "Cut order handling time and prevent stockouts in Magento Open Source with Admin-only techniques for orders, emails, inventory, catalog and performance."
 type: tutorial
 audience:
   - "Magento merchants"
