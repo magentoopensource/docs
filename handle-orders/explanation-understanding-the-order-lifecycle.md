@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Order Lifecycle"
-description: "Conceptual explanation of how orders flow through the system and business processes"
+description: "How an order moves through Magento Open Source from cart and payment to invoice, shipment and refund, and when an order counts as complete."
 type: explanation
 audience: "Magento merchants"
 tags:
@@ -12,9 +12,9 @@ last_updated: "2025-09-11T07:56:55.208Z"
 
 # Understanding the Order Lifecycle
 
-## Introduction
+## What is the order lifecycle in Magento Open Source?
 
-This guide explains each stage of an order in Magento—from cart and payment, through invoicing and shipment, to refunds—so you can speed fulfillment, reduce errors, and improve cash flow.
+The order lifecycle is the series of stages an order goes through in Magento, from cart and payment, through invoicing and shipment, to refunds. This guide explains each stage so you can speed fulfillment, reduce errors, and improve cash flow.
 
 In Magento, an order is marked Complete when all items are invoiced and shipped.
 

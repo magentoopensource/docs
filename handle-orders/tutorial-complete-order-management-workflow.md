@@ -1,6 +1,6 @@
 ---
 title: "Complete Order Management Workflow"
-description: "End-to-end tutorial on processing orders from placement to delivery"
+description: "Process a test order in Magento Open Source from placement to delivery: review, invoice, shipment, cancel or hold, and refund with a credit memo."
 type: tutorial
 audience:
   - "Magento merchants"

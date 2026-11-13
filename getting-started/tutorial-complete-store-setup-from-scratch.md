@@ -1,6 +1,6 @@
 ---
 title: "Complete Store Setup from Scratch"
-description: "Configure a new Magento 2.4.x store from first login to placing a successful test order, including taxes, shipping, payments, catalog, theme, and launch checks. This tutorial starts after Magento Open Source/Adobe Commerce 2.4.x is installed and you can sign in to the Admin."
+description: "Configure a new Magento Open Source 2.4.x store from first Admin login to a test order: taxes, shipping, payments, catalog, theme and launch checks."
 type: tutorial
 audience:
   - "Magento merchants"

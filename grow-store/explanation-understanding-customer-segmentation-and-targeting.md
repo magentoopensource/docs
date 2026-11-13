@@ -1,6 +1,6 @@
 ---
 title: "Understanding Customer Segmentation and Targeting"
-description: "Explanation of Customer Groups (Open Source and Commerce), Customer Segments (Adobe Commerce), behavioral targeting with Dynamic Blocks, and personalization strategies."
+description: "How Customer Groups, Customer Segments and Dynamic Blocks work for targeting shoppers in Magento Open Source and Adobe Commerce, and where the editions differ."
 type: explanation
 audience:
   - "Magento merchants"
@@ -13,10 +13,9 @@ last_updated: "2025-09-16T13:47:08.894Z"
 
 # Understanding Customer Segmentation and Targeting
 
-## Introduction
+## What are customer segmentation and targeting?
 
-Customer segmentation and targeting help you present the right prices, content, and offers to the right shoppers at the
-right time. In Magento Open Source, use Customer Groups, price rules, and CMS techniques for basic
+Customer segmentation and targeting is the practice of presenting the right prices, content, and offers to the right shoppers at the right time. In Magento Open Source, use Customer Groups, price rules, and CMS techniques for basic
 targeting. Effective targeting increases conversion rate, average order value, and customer lifetime value while
 reducing discount waste.
 

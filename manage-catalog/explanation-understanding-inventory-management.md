@@ -1,6 +1,6 @@
 ---
 title: "Understanding Inventory Management"
-description: "Explanation of stock tracking, multi-source inventory, and inventory strategies"
+description: "How Magento Open Source Inventory Management works: Sources, Stocks, Salable Quantity, reservations and Source Selection Algorithms, explained for merchants."
 type: explanation
 audience: "Magento merchants"
 tags:
@@ -16,7 +16,7 @@ last_updated: "2025-09-10T14:32:45.962Z"
 
 # Understanding Inventory Management
 
-## Introduction
+## What is Inventory Management (MSI)?
 
 Inventory Management (MSI) in Magento Open Source and Adobe Commerce controls product availability, allocation, and
 fulfillment across one or many locations (Sources). By understanding Salable Quantity, Stocks (website-level
